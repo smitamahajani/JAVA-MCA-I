@@ -1,9 +1,7 @@
-//error
 import javax.swing.*;  
 import java.awt.*;  
 import java.awt.event.*;  
-public class LabelExample1 extends Frame implements ActionListener
-{  
+public class LabelExample1 extends Frame implements ActionListener{  
     JTextField tf; JLabel l; JButton b;  
     LabelExample1(){  
         tf=new JTextField();  
@@ -16,11 +14,9 @@ public class LabelExample1 extends Frame implements ActionListener
         add(b);add(tf);add(l);    
         setSize(400,400);  
         setLayout(null);  
-        setVisible(true); 
-	//tf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);   
+        setVisible(true);  
     }  
-    public void actionPerformed(ActionEvent e) 
-{  
+    public void actionPerformed(ActionEvent e) {  
         try{  
         String host=tf.getText();  
         String ip=java.net.InetAddress.getByName(host).getHostAddress();  
