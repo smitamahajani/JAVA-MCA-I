@@ -26,6 +26,7 @@ public class PasswordFieldExample1 {
                    + new String(value.getPassword());   
                    label.setText(data);          
                 }  
-             });   
+             });
+        f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); 
 }  
 }  
