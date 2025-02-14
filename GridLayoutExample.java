@@ -4,6 +4,7 @@ import javax.swing.*;
     
 public class GridLayoutExample  
 {    
+  
 JFrame frameObj;    
   
 // constructor  
@@ -23,22 +24,19 @@ JButton btn8 = new JButton("8");
 JButton btn9 = new JButton("9");    
     
 // adding buttons to the frame  
-// since, we are using the parameterless constructor, therfore;   
+// since, we are using the parameterless constructor, therefore;   
 // the number of columns is equal to the number of buttons we   
 // are adding to the frame. The row count remains one.  
 frameObj.add(btn1); frameObj.add(btn2); frameObj.add(btn3);  
 frameObj.add(btn4); frameObj.add(btn5); frameObj.add(btn6);  
 frameObj.add(btn7); frameObj.add(btn8); frameObj.add(btn9);    
-  
-// setting the grid layout using the parameterless constructor 
-//try with passing different parameters   
-frameObj.setLayout(new GridLayout());    
-  
-  
+// setting the grid layout   
+// a 3 * 3 grid is created with the horizontal gap 20   
+// and vertical gap 25  
+frameObj.setLayout(new GridLayout(3, 3, 20, 25));    
 frameObj.setSize(300, 300);    
 frameObj.setVisible(true);    
 }  
-  
 // main method  
 public static void main(String argvs[])   
 {    
