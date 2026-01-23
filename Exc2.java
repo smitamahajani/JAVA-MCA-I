@@ -8,7 +8,7 @@ class Exc2
 	try
 	{
 	
-	System.out.println("It will not print");
+	System.out.println("It will  print");
 
 	d=0;
 	a = 23 /d;
